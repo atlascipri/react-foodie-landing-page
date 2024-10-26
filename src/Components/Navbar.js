@@ -34,7 +34,7 @@ const Navbar = () => {
     },
     {
       text: "Contact",
-      icon: <CommentRoundedIcon />,
+      icon: <PhoneRoundedIcon />,
     },
     {
       text: "Cart",
