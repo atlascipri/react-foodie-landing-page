@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
+import RestaurantIcon from '@mui/icons-material/Restaurant';
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
@@ -27,6 +28,10 @@ const Navbar = () => {
     {
       text: "About",
       icon: <InfoIcon />,
+    },
+    {
+      text: "Work",
+      icon: <RestaurantIcon />,
     },
     {
       text: "Testimonials",
@@ -50,6 +55,7 @@ const Navbar = () => {
       <div className="navbar-links-container">
         <a href=""> Home </a>
         <a href=""> About </a>
+        <a href=""> Work </a>
         <a href=""> Testimonials </a>
         <a href=""> Contact </a>
         <a href=""> Cart </a>
