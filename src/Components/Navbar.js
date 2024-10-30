@@ -53,11 +53,11 @@ const Navbar = () => {
         <img src={Logo} alt=""></img>
       </div>
       <div className="navbar-links-container">
-        <a href=""> Home </a>
-        <a href=""> About </a>
-        <a href=""> Work </a>
-        <a href=""> Testimonials </a>
-        <a href=""> Contact </a>
+        <a href="#home"> Home </a>
+        <a href="#about"> About </a>
+        <a href="#work"> Work </a>
+        <a href="#testimonials"> Testimonials </a>
+        <a href="#contact"> Contact </a>
         <a href=""> Cart </a>
         <a href="">
           <BsCart2 className="navbar-cart-icon" />
@@ -76,9 +76,9 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton component="a" href={`#${item.text.toLowerCase()}`}>
                   <ListItemIcon> {item.icon} </ListItemIcon>
-                  <ListItemText primary={item.text} />
+                  <ListItemText primary={item.text}/>
                 </ListItemButton>
               </ListItem>
             ))}

@@ -7,7 +7,7 @@ import { FiFacebook } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper">
+    <div className="footer-wrapper" id="footer">
       <div>
         <div className="footer-logo-container">
           <img src={Logo} alt="" />
